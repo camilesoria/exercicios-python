@@ -21,5 +21,5 @@ elif (jogador == 0 and computador == 2) or (jogador == 1 and computador == 0) or
 elif(computador == 0 and jogador == 2) or (computador == 1 and jogador == 0) or (computador == 2 and jogador == 1):
     resultado = "O computador venceu!"
 
-print("Você escolheu {} e o computador escolheu {}.".format(itens[jogador], itens[computador]))
+print(f"Você escolheu {itens[jogador]} e o computador escolheu {itens[computador]}.")
 print(resultado)

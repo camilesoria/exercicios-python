@@ -18,4 +18,4 @@ elif idade <= 20:
 else:
     categoria = "Master"
 
-print("O atleta tem {} anos e está na categoria {}.".format(idade, categoria))
+print(f"O atleta tem {idade} anos e está na categoria {categoria}.")

@@ -25,16 +25,15 @@ opcao = int(input("Digite o número correspondente à sua escolha: "))
 
 if opcao == 1:
     preco_final = dinheiroCheque(preco)
-    print("Preço final com desconto: R$ {:.2f}".format(preco_final))
+    print(f"Preço final com desconto: R$ {preco_final:.2f}")
 
 elif opcao == 2:
     preco_final = cartaoVista(preco)
-    print("Preço final com desconto: R$ {:.2f}".format(preco_final))
-
+    print(f"Preço final com desconto: R$ {preco_final:.2f}")
 elif opcao == 3:
     preco_final = preco
-    print("Preço final sem desconto: R$ {:.2f}".format(preco_final))
+    print(f"Preço final sem desconto: R$ {preco_final:.2f}")
 
 elif opcao == 4:
     preco_final = cartaoParcelado(preco)
-    print("Preço final com juros: R$ {:.2f}".format(preco_final))
+    print(f"Preço final com juros: R$ {preco_final:.2f}")

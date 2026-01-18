@@ -7,9 +7,9 @@ idade = anoAtual - nascimento
 
 if idade >= 18:
     print("Você já é maior de idade.")
-    print("Você tem {} anos.".format(idade))
-    print("Já se passaram {} anos desde que você atingiu a maioridade.".format(idade - 18))
+    print(f"Você tem {idade} anos.")
+    print(f"Já se passaram {idade - 18} anos desde que você atingiu a maioridade.")
 else:
     print("Você ainda não é maior de idade.")
-    print("Você tem {} anos.".format(idade))
-    print("Faltam {} anos para você atingir a maioridade.".format(18 - idade))
+    print(f"Você tem {idade} anos.")
+    print(f"Faltam {18 - idade} anos para você atingir a maioridade.")

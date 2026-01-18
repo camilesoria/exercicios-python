@@ -16,17 +16,21 @@ def situacao(media): # Criamos uma função que determina a situação do aluno 
 print("Bem-vindo ao sistema de avaliação escolar!\n")
 
 nome = str(input("Por favor, insira o nome do aluno: "))
-nota1 = float(input("Insira a primeira nota de {}: ".format(nome)))
-nota2 = float(input("Insira a segunda nota de {}: ".format(nome)))
+nota1 = float(input(f"Insira a primeira nota de {nome}: "))
+nota2 = float(input(f"Insira a segunda nota de {nome}: "))
 
-media = media(nota1, nota2) # Aqui, nós chamamos a função e salvamos o resultado dela na variável media. Precisamos fazer isso pra poder usar o resultado depois
-situacao = situacao(media)
+media_final = media(nota1, nota2) # Aqui, nós chamamos a função e salvamos o resultado dela na variável media. Precisamos fazer isso pra poder usar o resultado depois
+situacao_final = situacao(media_final)
 
-if situacao == "Reprovado":
-    print("A média de {} é {:.1f}. Infelizmente, {} foi reprovado.".format(nome, media, nome))
-elif situacao == "Recuperação":
-    print("A média de {} é {:.1f}. {} está de recuperação.".format(nome, media, nome))
-elif situacao == "Aprovado":
-    print("A média de {} é {:.1f}. Parabéns, {} foi aprovado!".format(nome, media, nome))
+if situacao_final == "Reprovado":
+    print(f"A média de {nome} é {media_final:.1f}. Infelizmente, {nome} foi reprovado.")
+elif situacao_final == "Recuperação":
+    print(f"A média de {nome} é {media_final:.1f}. {nome} está de recuperação.")
+elif situacao_final == "Aprovado":
+    print(f"A média de {nome} é {media_final:.1f}. Parabéns, {nome} foi aprovado!")
 else:
     print("Erro inesperado. Encerrando o programa.")
+
+# Dica: Eu cometi um erro no commit anterior. Nunca dê o mesmo nome para uma variável e para uma função.
+# Isso se chama Variable Shadowing e pode causar erros difíceis de detectar.
+# O Python pode ver o nome e não saber se você está se referindo à variável ou à função.

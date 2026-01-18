@@ -19,4 +19,4 @@ elif imc >= 40:
 else:
     classificacao = "Erro inesperado. Encerrando o programa."
 
-print("Seu IMC é {:.2f} e sua classificação é: {}.".format(imc, classificacao))
+print(f"Seu IMC é {imc:.2f} e sua classificação é: {classificacao}.")

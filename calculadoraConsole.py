@@ -30,12 +30,12 @@ while True:
     elif operacao == 6: # Raiz Quadrada
             resultado = numero1 ** 0.5
 
-    print("Resultado: {}".format(resultado))
+    print(f"Resultado: {resultado}")
     continuar = input("Deseja continuar a operação com o resultado atual? (s/n): ").lower()
     if continuar == 's':
         numero1 = resultado
     else:
-        print("Certo! Seu resultado final é: {}".format(resultado))
+        print(f"Certo! Seu resultado final é: {resultado}")
         break
 
     if operacao not in [1, 2, 3, 4, 5, 6]:

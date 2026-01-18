@@ -10,13 +10,13 @@ opcao = int(input("Escolha a base para conversão:\n1 - Binário\n2 - Hexadecima
 
 if opcao == 1:
     resultado = bin(numero)[2:] # bin() converte para binário
-    print("O número {} em binário é: {}".format(numero, resultado))
+    print(f"O número {numero} em binário é: {resultado}")
 elif opcao == 2:
     resultado = hex(numero)[2:] # hex() converte para hexadecimal
-    print("O número {} em hexadecimal é: {}".format(numero, resultado))
+    print(f"O número {numero} em hexadecimal é: {resultado}")
 elif opcao == 3:
     resultado = oct(numero)[2:] # oct() converte para octal
-    print("O número {} em octal é: {}".format(numero, resultado))
+    print(f"O número {numero} em octal é: {resultado}")
 elif opcao == 4:
     print("Saindo do programa. Até mais!")
 else:
